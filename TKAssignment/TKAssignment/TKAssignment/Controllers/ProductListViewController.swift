@@ -12,7 +12,7 @@ import SwiftyBeaver
 class ProductListViewController: UIViewController
 {
     let filterSegue = "Filter Segue"
-    
+    /// Specifies the number of count of row in Api Call.
     let countOfDataToBeFetchedOnce:Int  =   10
     let server                          =   LiveServer()
     
@@ -36,6 +36,7 @@ class ProductListViewController: UIViewController
         self.makeNetworkCall()
     }
     
+    /// Use this method to do  Networking call
     fileprivate func makeNetworkCall()
     {
         UIApplication.shared.isNetworkActivityIndicatorVisible  = true
@@ -116,17 +117,17 @@ extension ProductListViewController:UICollectionViewDataSource, UICollectionView
         return CGSize(width: (self.view.frame.size.width - 0) / 2, height: 250.0)
     }
     
-    //return number of sections in collection view
+    ///return number of sections in collection view
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 2
     }
     
-    // tell the collection view how many cells to make
+    /// tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return productList.count 
     }
     
-    // make a cell for each cell index path
+    /// make a cell for each cell index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCollectionViewCell.reuseIdenitifier, for: indexPath as IndexPath) as? ProductCollectionViewCell else {
@@ -136,13 +137,6 @@ extension ProductListViewController:UICollectionViewDataSource, UICollectionView
         cell.prepareCellWithProduct(product, atIndexPath: indexPath)
 
         return cell
-    }
-    
-    // MARK: - UICollectionViewDelegate protocol
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // handle tap events
-        print("You selected cell #\(indexPath.item)!")
     }
 }
 
