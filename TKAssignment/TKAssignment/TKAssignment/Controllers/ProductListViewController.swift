@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyBeaver
 
 class ProductListViewController: UIViewController
 {
@@ -54,7 +55,7 @@ class ProductListViewController: UIViewController
                 let alertController = UIAlertController.alertControlWithTitle(NSLocalizedString("Error!", comment:""), message: message, okAlertAction: nil, cancelAlertAction:nil)
                 self?.present(alertController, animated: true, completion:nil)
                 
-                NSLog("No data found")
+                SwiftyBeaver.debug("No data found", context: "Product list")
                 
                 //SHOW ALERT IF DATa is not found
                 return
