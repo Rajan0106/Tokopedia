@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProductCollectionViewCell" id="Vj5-kU-Y69" customClass="ProductCollectionViewCell" customModule="TKAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="168" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTm-pn-5b8">
+                    <rect key="frame" x="8" y="8" width="152" height="157"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="157" id="N15-PO-yii"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultrathin Softcase Samsung J1 / ultra thin soft case jely" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkU-ik-1Bf">
+                    <rect key="frame" x="8" y="173" width="152" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qqi-qa-BNw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 50.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-4i-140">
+                    <rect key="frame" x="8" y="221" width="152" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9Ma-dc-Tkn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" red="0.90588235289999997" green="0.0" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-ow-Vbd" customClass="DividerView" customModule="TKAssignment" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="249" width="168" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Cvw-Qb-7O4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="overrideColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3x-ck-NCQ" customClass="DividerView" customModule="TKAssignment" customModuleProvider="target">
+                    <rect key="frame" x="167.5" y="0.0" width="0.5" height="250"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="4Tb-nX-kwu"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="overrideColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NDi-4i-140" firstAttribute="leading" secondItem="Vj5-kU-Y69" secondAttribute="leading" constant="8" id="3jM-wq-Lfz"/>
+                <constraint firstItem="LkU-ik-1Bf" firstAttribute="leading" secondItem="Vj5-kU-Y69" secondAttribute="leading" constant="8" id="65a-WU-Ame"/>
+                <constraint firstItem="iTm-pn-5b8" firstAttribute="top" secondItem="Vj5-kU-Y69" secondAttribute="top" constant="8" id="7jH-Fs-jg8"/>
+                <constraint firstAttribute="trailing" secondItem="NDi-4i-140" secondAttribute="trailing" constant="8" id="CtR-7Z-I8S"/>
+                <constraint firstAttribute="trailing" secondItem="v3x-ck-NCQ" secondAttribute="trailing" id="FlP-CM-BcQ"/>
+                <constraint firstItem="xTR-ow-Vbd" firstAttribute="leading" secondItem="Vj5-kU-Y69" secondAttribute="leading" id="MxQ-DK-vfd"/>
+                <constraint firstAttribute="bottom" secondItem="NDi-4i-140" secondAttribute="bottom" constant="8" id="RPH-Fj-MOK"/>
+                <constraint firstAttribute="trailing" secondItem="iTm-pn-5b8" secondAttribute="trailing" constant="8" id="T5m-Z9-Shf"/>
+                <constraint firstItem="iTm-pn-5b8" firstAttribute="leading" secondItem="Vj5-kU-Y69" secondAttribute="leading" constant="8" id="TFK-4N-D0B"/>
+                <constraint firstAttribute="trailing" secondItem="LkU-ik-1Bf" secondAttribute="trailing" constant="8" id="Yje-eu-u94"/>
+                <constraint firstItem="v3x-ck-NCQ" firstAttribute="top" secondItem="Vj5-kU-Y69" secondAttribute="top" id="jCA-P1-sef"/>
+                <constraint firstAttribute="trailing" secondItem="xTR-ow-Vbd" secondAttribute="trailing" id="l9S-hH-fFR"/>
+                <constraint firstAttribute="bottom" secondItem="xTR-ow-Vbd" secondAttribute="bottom" id="mex-Za-0hV"/>
+                <constraint firstAttribute="bottom" secondItem="v3x-ck-NCQ" secondAttribute="bottom" id="mmD-fc-czW"/>
+                <constraint firstItem="LkU-ik-1Bf" firstAttribute="top" secondItem="iTm-pn-5b8" secondAttribute="bottom" constant="8" id="zuf-ID-TfH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="productImageView" destination="iTm-pn-5b8" id="4Q2-Av-huI"/>
+                <outlet property="productNameLabel" destination="LkU-ik-1Bf" id="QiE-aR-04G"/>
+                <outlet property="productPriceLabel" destination="NDi-4i-140" id="N9Q-JE-3py"/>
+                <outlet property="rightDividerView" destination="v3x-ck-NCQ" id="Fqg-5r-c4q"/>
+            </connections>
+            <point key="canvasLocation" x="-442.5" y="-316"/>
+        </view>
+    </objects>
+</document>

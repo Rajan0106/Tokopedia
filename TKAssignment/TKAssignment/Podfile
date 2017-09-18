@@ -1,0 +1,35 @@
+
+platform :ios, '9.0'
+use_frameworks!
+
+target 'TKAssignment' do
+pod 'Alamofire', '~> 4.0'
+pod 'SwiftyJSON'
+pod 'SwiftyBeaver'
+pod 'Kingfisher',  '< 4.0'
+pod 'TTRangeSlider'
+pod 'SVPullToRefresh'
+pod 'TagListView', '~> 1.0'
+
+    target 'TKAssignmentTests' do
+    	inherit! :search_paths
+    	# Pods for testing
+        pod 'Alamofire', '~> 4.0'
+        pod 'SwiftyJSON'
+        pod 'SwiftyBeaver'
+        pod 'Kingfisher',  '< 4.0'
+        pod 'TTRangeSlider'
+        pod 'SVPullToRefresh'
+        pod 'TagListView', '~> 1.0'
+    end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+      config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+      config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+  end
+end
